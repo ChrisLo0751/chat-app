@@ -3,7 +3,11 @@
 [Chat App Demo](https://chat-app-delta-mauve-33.vercel.app)
 
 ## 快速开始
-1. 安装依赖并启动项目：
+1. 拉取项目：
+   ```bash
+   git clone https://github.com/ChrisLo0751/chat-app.git
+   ```  
+2. 安装依赖并启动项目：
    ```bash
    pnpm install && pnpm dev
    ```
