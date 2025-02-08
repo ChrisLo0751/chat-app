@@ -46,6 +46,12 @@ export default function ChatInput({ onSend, disabled }: ChatInputProps) {
           multiline
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+              e.preventDefault();
+              handleSubmit(e);
+            }
+          }}
           placeholder="Send a message..."
           disabled={disabled}
           inputRef={textFieldRef}
